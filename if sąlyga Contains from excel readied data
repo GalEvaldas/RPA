@@ -1,0 +1,1 @@
+CurrentRoww.ItemArray.Any(Function(item) item.ToString.Contains("Exclusion"))
