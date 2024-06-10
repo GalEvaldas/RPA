@@ -1,1 +1,2 @@
 CurrentRoww.ItemArray.Any(Function(item) item.ToString.Contains("Exclusion"))
+Not CurrentRow.ItemArray.Any(Function(item) item.ToString().Contains("Exclusion") OrElse item.ToString().Contains("Balance updated") OrElse item.ToString().Contains("balance"))
