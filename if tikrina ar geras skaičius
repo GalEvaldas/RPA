@@ -1,0 +1,3 @@
+Int32.TryParse(InputValue, 0)
+//arba
+Double.TryParse(InputValue, 0)
