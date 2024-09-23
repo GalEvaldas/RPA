@@ -1,0 +1,1 @@
+System.Text.RegularExpressions.Regex.Matches( number, "\d+(\.\d+)?").Cast(of  System.Text.RegularExpressions.Match).Select( Function(m) m.Value)
