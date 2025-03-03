@@ -1,0 +1,1 @@
+DataInput.Select("[DBM PALAUTE]='Product code was not found'").CopyToDataTable
