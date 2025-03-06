@@ -1,1 +1,6 @@
 DataInput.Select("[DBM PALAUTE]='Product code was not found'").CopyToDataTable
+
+for filter and add only two colum of data:
+(From row In DataInput.AsEnumerable()
+                 Where Not IsDBNull(row("DBM PALAUTE")) AndAlso row.Field(Of String)("DBM PALAUTE") = "Product code was not found"
+                 Select FilteredTable.Rows.Add(row("DBM PALAUTE"), row("Product_Brand"))).CopyToDataTable()
