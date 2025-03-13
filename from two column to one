@@ -1,0 +1,2 @@
+(From row In dtForFiltration.AsEnumerable()
+		Select dtLOL.Rows.Add(row("longDescription").ToString & " keyboard= " & row("kbLanguage").ToString)).CopyToDataTable()
