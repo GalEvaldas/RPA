@@ -1,0 +1,7 @@
+(From row In YouTubeDT.AsEnumerable()
+Where Not row.IsNull("Duration")
+             Let newRow = CleanYoutubDT.NewRow()
+             Let duration = If(row.IsNull("Duration"), String.Empty, row("Duration").ToString().Trim())
+             Let items = row.ItemArray
+             Let updatedItems = items.Select(Function(val, i) If(YouTubeDT.Columns(i).ColumnName = "Duration", duration, val)).ToArray()
+             Select CleanYoutubDT.Rows.Add(updatedItems)).CopyToDataTable()
