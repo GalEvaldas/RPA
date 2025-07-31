@@ -1,0 +1,3 @@
+(From row In TableDT.AsEnumerable()
+              Where Not row("Title").ToString().Contains("""")
+              Select row).CopyToDataTable()
