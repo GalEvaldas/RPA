@@ -1,0 +1,4 @@
+//invoce code
+For Each row As DataRow In goodsChunkDt.Rows
+  row("pavadinimas") = 1
+  Next
